@@ -12,30 +12,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.composecourseyt.ui.theme.ComposeCourseYTTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // Command + P で何が入るやつか見れる
-            Row(
-                modifier = Modifier
-                    .width(300.dp)
-                    .height(300.dp)
-                    // .fillMaxSize()
-                    .background(Color.Yellow),
-                horizontalArrangement = Arrangement.SpaceAround,
-                verticalAlignment = Alignment.CenterVertically
-                /* horizontalAllignment = Allignment.Alignment.CenterVertically
-                verticalArrangement = Arrangement.SpaceAround */
-            ) {
-                Text(text = "Hello")
-                Text(text = "World")
-                Text(text = "hello")
-            }
+            
         }
     }
 }
