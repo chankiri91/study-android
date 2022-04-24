@@ -57,3 +57,23 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+
+@Composable
+fun ColorBox(
+    modifier: Modifier = Modifier, updateColor: (Color) -> Unit
+) {
+
+    Box(modifier = modifier
+        .background(Color.Red)
+        .clickable {
+            updateColor(
+                Color(
+                    Random.nextFloat(),
+                    Random.nextFloat(),
+                    Random.nextFloat(),
+                    1f
+                )
+            )
+        }
+    )
+}
