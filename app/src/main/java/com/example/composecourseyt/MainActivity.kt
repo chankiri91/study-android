@@ -1,5 +1,6 @@
 package com.example.composecourseyt
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -32,6 +33,12 @@ class MainActivity : ComponentActivity() {
                 Conversation(SampleData.conversationSample)
             }
         }
+        Text(
+           text =  (curPercentage.value * number).toInt().toString(),
+            color = Color.Black,
+            fontSize = fintSize,
+            fontWeight = FontWeight.Bold
+        )
     }
 }
 
